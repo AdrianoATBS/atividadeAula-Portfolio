@@ -19,14 +19,21 @@ Cor de texto: #333333 -> Cinza escuro -> Texto principal
 
 body
 {
-
+    background-color: #F5F5F5;
+    line-height: 1.6;
+}
+.container
+{
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 #menu
 {
-    padding: 15px 20px;
+    width: 100%;
     background-color: #1F3A93;
+    padding: 20px 0;
 }
 #menu h1
 {
@@ -38,9 +45,9 @@ body
 }
 #menu ul {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
 }
 #menu ul li {
     list-style: none;
@@ -52,8 +59,27 @@ body
     font-size: 1.2em;
 }
 #menu ul li a:hover {
-    color: #c2b9d6;
+    color: #4A90E2;
 }
 #menu ul li a:active {
     color: #F2994A;
+}
+
+#sobre
+{
+    padding: 20px 0;
+}
+
+#sobre h2
+{
+    color: #1F3A93;
+    font-size: 2em;
+    font-family: 'MyCustomFont';
+        
+}
+#sobre p
+{
+    color: #333333;
+    font-size: 1.2em;
+   margin:20px 0;
 }
