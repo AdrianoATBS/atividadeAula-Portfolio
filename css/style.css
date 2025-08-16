@@ -9,6 +9,10 @@ Cor de texto: #333333 -> Cinza escuro -> Texto principal
     font-family: 'MyCustomFont';
     src: url('fonts/MyCustomFont.woff2') format('woff2'),
          url('fonts/MyCustomFont.woff') format('woff');
+    
+    font-family: "Merriweather";
+    src:    url('fonts/Merriweather.ttf') format('truetype'),
+            url('fonts/Merriweather.ttf') format('truetype');
 }
 *
 {
@@ -40,7 +44,7 @@ body
     color: #FFFFFF;
     text-align: center;
     padding-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: 'MyCustomFont';
 }
 #menu ul {
@@ -80,7 +84,8 @@ body
 {
     color: #333333;
     font-size: 1.2em;
-   margin:20px 0;
+    margin:20px 0;
+    font-family: 'Merriweather';
 }
 #projetos
 {
@@ -92,7 +97,7 @@ body
 {
     color: #1F3A93;
     font-size: 2em;
-    font-family: 'MyCustomFont';     
+    font-family: 'MyCustomFont';
 
 }
 #projetos p
@@ -106,6 +111,13 @@ body
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.projeto .detalhes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 .projeto details
 {
@@ -138,6 +150,7 @@ body
     font-weight: bold;
     font-size: 1.2em;
     position: relative;
+    font-family: 'MyCustomFont';  
     
 }
 
@@ -157,5 +170,110 @@ body
 .imagemProjeto
 {
     width: 400px;
+    display: block;
+    margin: 10px auto;
+}
+#formulario
+{
+    padding: 40px 0;
+    text-align: center;
 
+}
+#formulario h2
+{
+    color: #1F3A93;
+    font-size: 2em;
+    font-family: 'MyCustomFont';     
+}
+#formulario form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+#formulario label 
+{
+    color: #333333;
+    font-size: 1.2em;
+}
+#formulario input{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+#formulario textarea
+{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+#formulario button
+{
+    width: 100%;
+    max-width: 400px;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#formulario button:hover
+{
+    background-color: #1e5696;
+    transition: 0.5s;
+}
+#contato
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#contato h2
+{
+    color: #1F3A93;
+    font-size: 2em;
+    font-family: 'MyCustomFont';     
+}
+#contato p
+{
+    color: #333333;
+    font-size: 1.2em;
+    text-align: center;
+}
+#contato span
+{
+    color: #4A90E2;
+}
+#contato ul 
+{
+    list-style: none;
+}
+#contato a
+{
+    color: #4A90E2;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+
+#rodape
+{
+    background-color: #1F3A93;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
 }
