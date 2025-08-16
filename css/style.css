@@ -74,12 +74,88 @@ body
 {
     color: #1F3A93;
     font-size: 2em;
-    font-family: 'MyCustomFont';
-        
+    font-family: 'MyCustomFont';     
 }
 #sobre p
 {
     color: #333333;
     font-size: 1.2em;
    margin:20px 0;
+}
+#projetos
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#projetos h2
+{
+    color: #1F3A93;
+    font-size: 2em;
+    font-family: 'MyCustomFont';     
+
+}
+#projetos p
+{
+    color: #333333;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.projeto
+{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.projeto details
+{
+    background-color: #F5F5F5;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 10px;
+}
+.projeto details .detalhes
+{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: all 0.4s ease;
+}
+.projeto details[open] .detalhes
+{
+    max-height: 500px;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.projeto details summary
+{
+    list-style: none;
+    cursor: pointer;
+    color: #1F3A93;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    
+}
+
+.projeto details summary::after
+{
+    content: ' + ';
+    font-size: 0.8em;
+    vertical-align: middle;
+    
+}
+.projeto details[open] summary::after
+{
+    content: ' - ';
+    color: #4A90E2;
+}
+
+.imagemProjeto
+{
+    width: 400px;
+
 }
