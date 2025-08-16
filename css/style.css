@@ -9,10 +9,11 @@ Cor de texto: #333333 -> Cinza escuro -> Texto principal
     font-family: 'MyCustomFont';
     src: url('fonts/MyCustomFont.woff2') format('woff2'),
          url('fonts/MyCustomFont.woff') format('woff');
-    
-    font-family: "Merriweather";
-    src:    url('fonts/Merriweather.ttf') format('truetype'),
-            url('fonts/Merriweather.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('fonts/Merriweather.ttf') format('truetype'),
+         url('fonts/Merriweather.ttf') format('truetype');
 }
 *
 {
@@ -61,6 +62,7 @@ body
     color: #FFFFFF;
     font-weight: bold;
     font-size: 1.2em;
+    font-family: 'Merriweather';
 }
 #menu ul li a:hover {
     color: #4A90E2;
@@ -105,6 +107,7 @@ body
     color: #333333;
     font-size: 1.2em;
     margin: 20px 0;
+    font-family: 'Merriweather';
 }
 .projeto
 {
@@ -252,6 +255,7 @@ body
     color: #333333;
     font-size: 1.2em;
     text-align: center;
+    font-family: 'Merriweather';
 }
 #contato span
 {
@@ -307,6 +311,10 @@ body
     {
         flex-direction: column;
         align-items: center;
+    }
+    #menu ul li a
+    {
+        text-align: center;
     }
     #sobre p, #projetos p
     {
