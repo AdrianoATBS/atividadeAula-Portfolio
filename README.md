@@ -14,4 +14,4 @@ Apresenta seções de **Sobre Mim**, **Projetos**, **Formulário** e **Contato**
 3. Navegue pelas seções usando o menu ou clicando nos projetos para ver detalhes.
 
 ## Autor
-**Adriano**
+**Adriano Teixeira**
