@@ -13,7 +13,6 @@ Cor de texto: #333333 -> Cinza escuro -> Texto principal
 @font-face {
     font-family: 'Merriweather';
     src: url('fonts/Merriweather.ttf') format('truetype'),
-         url('fonts/Merriweather.ttf') format('truetype');
 }
 *
 {
@@ -134,7 +133,7 @@ body
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transform: scaleY(1);
+    transform: scaleY(0);
     transform-origin: top;
     transition: all 0.4s ease;
 }
@@ -230,7 +229,6 @@ body
     padding: 10px 20px;
     font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 #formulario button:hover
 {
@@ -302,11 +300,7 @@ body
     }
 }
 @media (max-width: 768px){
-    #menu
-    {
-        flex-direction: column;
-        align-items: center;
-    }
+
     #menu ul
     {
         flex-direction: column;
@@ -316,9 +310,18 @@ body
     {
         text-align: center;
     }
+    #sobre h2, #projetos h2
+    {
+        text-align: center;
+    }
     #sobre p, #projetos p
     {
         font-size: 1em;
+        text-align: center;
+    }
+    .projeto details summary
+    {
+        text-align: center;
     }
     .imagemProjeto
     {
